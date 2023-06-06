@@ -1,0 +1,44 @@
+<!---File name: contact.ejs-->
+<!---Student name: Tsz Shuen Lai-->
+<!---Student ID: 301278443-->
+<!---Date: 1 Jun 2023-->
+<%- include ('partials/header.ejs') %>
+<%- include ('partials/main_nav.ejs') %>
+    <main class="container">
+        <div class="jumbotron">
+            <h1 class="display-4">Welcome to <%= title %> Page</h1>
+            <div>
+                <h3> Contact me by following information: </h3>
+                <p>Phone: +1 (416) 260 7877</p>
+                <p>Linkedin: linkedin.com/in/maggie-lai-817086000</p>
+                <p>Email: tlai34@my.centennialcollege.ca</p>
+            </div>
+            <br>
+            <div>
+                <h3> Send me enquery </h3>
+                <form action="/" method="POST">
+                    <label for="firstName">First Name:</label>
+                    <input type="text" id="firstName" name="firstName" required><br>
+                
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" id="lastName" name="lastName" required><br>
+                
+                    <label for="contactNumber">Contact Number:</label>
+                    <input type="tel" id="contactNumber" name="contactNumber" required><br>
+                
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required><br>
+                
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message"></textarea><br>
+                
+                    <button type="submit">Submit</button><br>
+                </form>
+            </div>
+        </div>
+    </main> 
+    <!--bottom nav-->
+   
+   
+    <!--script section-->
+<%- include ('partials/footer.ejs') %>
